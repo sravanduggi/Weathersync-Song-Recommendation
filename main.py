@@ -3,9 +3,9 @@ import requests
 
 app = FastAPI()
 
-# API keys
-OPENWEATHER_API_KEY = "ec3df7376290aad04ff186d6dc1b37a8"
-LASTFM_API_KEY = "460418a8474af9c3a7e151868e917b8e"
+# Load API keys from environment variables
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+LASTFM_API_KEY = os.getenv("LASTFM_API_KEY")
 
 
 
